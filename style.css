@@ -1,0 +1,179 @@
+:root {
+  --main-color: #2b2b2bd4;
+  --headers-color: #2626a9;
+  --name-element-color: #2121de;
+  --blue-color: #177fb1;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 1210px;
+  height: 1680px;
+  font-family: Lato;
+  font-size: 20px;
+  color: var(--main-color);
+  /*border: solid 1px black;*/
+}
+
+#header {
+  border-bottom: solid 1px var(--headers-color);
+  position: absolute;
+  width: 1210px;
+  top: 0px;
+  left: 0px;
+  height: 200px;
+  text-align: center;
+  font-family: LatoHairline;
+}
+h1 {
+  font-size: 70px;
+  padding-bottom: 10px;
+  margin: 10px;
+  font-family: LatoHairline;
+}
+h1 strong {
+  font-weight: 700;
+  font-family: LatoLight;
+}
+h2,
+h3 {
+  margin: 5px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: LatoLight;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 5px;
+  border-bottom: solid 1px black;
+  display: inline-block;
+  color: var(--headers-color);
+}
+
+h5 {
+  color: var(--name-element-color);
+  font-size: 20px;
+  margin: 0px;
+  text-transform: uppercase;
+  font-family: LatoLight;
+  padding-bottom: 5px;
+}
+h6 {
+  font-size: 20px;
+  margin: 0px;
+  font-family: LatoLight;
+  padding-bottom: 5px;
+}
+ul {
+  padding-left: 20px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  font-style: italic;
+}
+#leftSide {
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  width: 500px;
+  height: 1480px;
+}
+
+#information,
+#education,
+#techSkills,
+#languages {
+  margin-top: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 25px;
+}
+
+.location,
+.date {
+  padding: 0px;
+  margin: 0px;
+}
+.location {
+  color: var(--blue-color);
+}
+.tech-category {
+  display: block;
+  font-size: 27px;
+  font-family: LatoBlack;
+}
+.skill {
+  padding-left: 5px;
+  padding-right: 3px;
+}
+#languages {
+  font-size: 23px;
+}
+.location-special {
+  font-family: RalewayMedium;
+  padding-left: 10px;
+}
+
+#languages table {
+  width: 100%;
+}
+.flag {
+  width: 24px;
+  height: 24px;
+  padding: 0px;
+}
+#rightSide {
+  position: absolute;
+  top: 200px;
+  left: 500px;
+  width: 700px;
+  height: 1480px;
+}
+
+#projects {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.projectName {
+  font-family: LatoHairline;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: underline;
+  color: rgba(1, 1, 1, 0.8);
+  text-decoration-color: rgba(1, 1, 1, 0.5);
+}
+.forEntreprise {
+  padding-left: 10px;
+}
+.entreprise {
+  font-style: italic;
+}
+.techs {
+  color: blue;
+  font-style: italic;
+}
+
+.elementDescription {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sepProject {
+  border-style: dashed;
+  border-color: var(--name-element-color);
+  border-width: 1px;
+}
+.description {
+  font-style: italic;
+}
