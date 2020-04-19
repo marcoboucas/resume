@@ -16,19 +16,19 @@
 }
 @font-face {
   font-family: LatoBlack;
-  src: url("./lato/Lato-Black.ttf.ttf");
+  src: url("./lato/Lato-Black.ttf");
 }
 @font-face {
   font-family: LatoBlackItalic;
-  src: url("./lato/Lato-BlackItalic.ttf.ttf");
+  src: url("./lato/Lato-BlackItalic.ttf");
 }
 @font-face {
   font-family: LatoBold;
-  src: url("./lato/Lato-Bold.ttf.ttf");
+  src: url("./lato/Lato-Bold.ttf");
 }
 @font-face {
   font-family: LatoBoldItalic;
-  src: url("./lato/Lato-BoldItalic.ttf.ttf");
+  src: url("./lato/Lato-BoldItalic.ttf");
 }
 @font-face {
   font-family: LatoHairline;

@@ -35,6 +35,7 @@
 				
 				</table>
 			</div>
+			<hr class="sepProject">
 			<div id="education">
 				<h4>Education</h4>
 				<div>
@@ -56,7 +57,7 @@
 						</ul>
 					</p>
 				</div>
-				<hr class="sepProject">
+				
 				<div>
 					<h5>Master of Engineering at Centralesupélec</h5>
 					<p class="location">Centralesupélec</p>
@@ -65,7 +66,7 @@
 						Centralesupélec is an elite Engineering School, member of France's Granes Ecoles, based on a highly selective recruitement process.
 					</p>
 				</div>
-				<hr class="sepProject">
+				
 				<div>
 					<h5>Intensive preparatory courses</h5>
 					<p class="location">Saint-Louis</p>
@@ -75,6 +76,7 @@
 					</p>
 				</div>
 			</div>
+			<hr class="sepProject">
 			<div id="techSkills">
 				<h4>Skills</h4>
 				<span class="tech-category">Languages</span>
@@ -110,23 +112,23 @@
 				<table>
 					<tr>
 						<td><img src="./flags/french.svg" class="flag"/></td>
-						<td>French</td>
-						<td>Native</td>
+						<td class="language">French</td>
+						<td class="language-value">Native</td>
 					</tr>
 					<tr>
-						<td><img src="./flags/english.svg" class="flag"/></td>
-						<td>English</td>
-						<td>Fluent</td>
+						<td><img src="./flags/american.svg" class="flag"/></td>
+						<td class="language">English</td>
+						<td class="language-value">Fluent</td>
 					</tr>
 					<tr>
 						<td><img src="./flags/german.svg" class="flag"/></td>
-						<td>German</td>
-						<td>Good Notions</td>
+						<td class="language">German</td>
+						<td class="language-value">Good Notions</td>
 					</tr>
 					<tr>
 						<td><img src="./flags/spanish.svg" class="flag"/></td>
-						<td>Spanish</td>
-						<td>Notions</td>
+						<td class="language">Spanish</td>
+						<td class="language-value">Notions</td>
 					</tr>
 				</table>
 			</div>
@@ -143,11 +145,17 @@
 						</span>
 						<span class="content">
 							<ul>
-								<li>
-									<h6><span class="projectName">Emotions Recognition in Videos </span><span class="forEntreprise">for <span class="entreprise">Flashbrand</span></span></h6>
+								<li class="project">
+									<h6><span class="projectName">Emotions Recognition in Videos</span><span class="forEntreprise">for <span class="entreprise">Flashbrand</span></span></h6>
 									<span class="description">Flashbrand is an innovative startup that aims to revolutionize feedbacks and HR methods using AI and an employee centred approach.</span></br>
 									<span class="content">Creation of a software capturing video in real time from the user and processing it using Machine Learning algorithms to classify emotions in a coach bot.</span></br>
 									<span class="techs">NodeJs - OpenSMILE - Tensorflow/Keras</span>
+								</li>
+								<li class="project">
+									<h6><span class="projectName">Coefficient Computation</span><span class="forEntreprise">for <span class="entreprise">RunWaiz Safran</span></span></h6>
+									<span class="description">RunWaiz is the winner of the "We Love Intrapreneurs" program of Safran, it intends to create an airport decision making tool based on runwaiz conditions.</span></br>
+									<span class="content">Creation of a Machine Learning pipeline and search of the best algorithm to evaluate the runway condition based on sensors outputs.</span></br>
+									<span class="techs">Scikit-Learn - Keras - Numpy - Pandas</span>
 								</li>
 								
 							</ul>
@@ -165,12 +173,12 @@
 						</span>
 						<span class="content">
 							<ul>
-								<li>
+								<li class="project">
 									<h6><span class="projectName">Tweets Analysis</h6>
 									<span class="content">A project aiming to detect the audience score of movies based on a scraped database of tweets. We used and compared several algorithms and methods (TF-IDF, Bag of words and LSTM with Embedding).</span></br>
 									<span class="techs">NLTK - Numpy/Pandas - Keras/Tensorflow - LSTM</span>
 								</li>
-								<li>
+								<li class="project">
 									<h6><span class="projectName">Clustering pedagogical platform</h6>
 									<span class="content">A web platform to allow CentraleSupélec students to easily learn Clustering algorithms and improve their skills through exercices and notebooks.</span></br>
 									<span class="techs">Django - Jupyter - K-Means - DBSCAN - Hierarchical Clustering</span>

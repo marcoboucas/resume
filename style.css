@@ -14,7 +14,7 @@ body {
   font-family: Lato;
   font-size: 20px;
   color: var(--main-color);
-  /*border: solid 1px black;*/
+  border: solid 1px black;
 }
 
 #header {
@@ -23,13 +23,12 @@ body {
   width: 1210px;
   top: 0px;
   left: 0px;
-  height: 200px;
+  height: 190px;
   text-align: center;
   font-family: LatoHairline;
 }
 h1 {
   font-size: 70px;
-  padding-bottom: 10px;
   margin: 10px;
   font-family: LatoHairline;
 }
@@ -43,6 +42,7 @@ h3 {
 }
 h2 {
   font-size: 30px;
+  color: #0b239f;
 }
 h3 {
   font-size: 28px;
@@ -75,6 +75,8 @@ h6 {
 }
 ul {
   padding-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 a {
   color: inherit;
@@ -83,9 +85,9 @@ a {
 }
 #leftSide {
   position: absolute;
-  top: 200px;
+  top: 190px;
   left: 0px;
-  width: 500px;
+  width: 450px;
   height: 1480px;
 }
 
@@ -93,10 +95,10 @@ a {
 #education,
 #techSkills,
 #languages {
-  margin-top: 17px;
+  margin-top: 13px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .location,
@@ -109,12 +111,15 @@ a {
 }
 .tech-category {
   display: block;
-  font-size: 27px;
+  font-size: 20px;
+  color: #0000008c;
   font-family: LatoBlack;
 }
 .skill {
+  font-size: 20px;
   padding-left: 5px;
   padding-right: 3px;
+  font-family: LatoLight;
 }
 #languages {
   font-size: 23px;
@@ -122,6 +127,7 @@ a {
 .location-special {
   font-family: RalewayMedium;
   padding-left: 10px;
+  color: black;
 }
 
 #languages table {
@@ -132,11 +138,18 @@ a {
   height: 24px;
   padding: 0px;
 }
+.language {
+  font-family: Lato;
+}
+.language-value {
+  font-family: LatoLight;
+  font-style: italic;
+}
 #rightSide {
   position: absolute;
-  top: 200px;
-  left: 500px;
-  width: 700px;
+  top: 190px;
+  left: 450px;
+  width: 750px;
   height: 1480px;
 }
 
@@ -145,8 +158,11 @@ a {
   padding-top: 20px;
   padding-right: 20px;
 }
+.project {
+  margin-bottom: 5px;
+}
 .projectName {
-  font-family: LatoHairline;
+  font-family: Lato;
   font-weight: bold;
   font-size: 25px;
   text-decoration: underline;
@@ -160,7 +176,7 @@ a {
   font-style: italic;
 }
 .techs {
-  color: blue;
+  color: #3891f0;
   font-style: italic;
 }
 
@@ -173,7 +189,16 @@ a {
   border-style: dashed;
   border-color: var(--name-element-color);
   border-width: 1px;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
 }
 .description {
   font-style: italic;
+}
+
+@media print {
+  html, body {
+    border: none;
+  }
 }
