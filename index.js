@@ -27,14 +27,15 @@ app.get('', function (req, res) {
 app.use(express.static('public'));
 
 
-app.listen(PORT, function () {
+let server = app.listen(PORT, function () {
   console.log(`Example app listening on port ${PORT}!`)
 
   
   printPDF(PORT).then((buffer, err)=>{
     if (err) console.log(err)
     fs.writeFile("./public/cv.pdf", buffer, (err)=>{
-      console.log(err)
+      console.log("File created")
+      server.close()
     })
   })
 
