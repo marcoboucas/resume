@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "1.0.0",
   "description": "My resume",
-  "main": "convertPdf.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/marcoboucas/resume#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "puppeteer": "^3.0.0"
   },
   "devDependencies": {
@@ -24,7 +25,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "node ./convertPdf.js && git add ./public/cv.pdf"
+      "pre-commit": "node ./index.js && git add ./public/cv.pdf"
     }
   }
 }
