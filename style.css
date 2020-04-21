@@ -1,8 +1,8 @@
 :root {
-  --main-color: #2b2b2bd4;
-  --headers-color: #2626a9;
-  --name-element-color: #2121de;
-  --blue-color: #177fb1;
+  --main-color: #2b2b2be6;
+  --headers-color: #3891f0;;
+  --name-element-color: #3891f0;;
+  --blue-color: #3891f0;;
 }
 
 html,
@@ -11,7 +11,7 @@ body {
   padding: 0px;
   width: 1210px;
   height: 1680px;
-  font-family: Lato;
+  font-family: LatoLight;
   font-size: 20px;
   color: var(--main-color);
   border: solid 1px black;
@@ -54,17 +54,16 @@ h4 {
   margin: 0px;
   padding: 0px;
   margin-bottom: 5px;
-  border-bottom: solid 1px black;
   display: inline-block;
   color: var(--headers-color);
 }
 
 h5 {
-  color: var(--name-element-color);
   font-size: 20px;
   margin: 0px;
+  font-family: RalewayMedium;
+  color: black;
   text-transform: uppercase;
-  font-family: LatoLight;
   padding-bottom: 5px;
 }
 h6 {
@@ -105,10 +104,10 @@ a {
 .date {
   padding: 0px;
   margin: 0px;
+  color:black;
 }
-.location {
-  color: var(--blue-color);
-}
+
+
 .tech-category {
   display: block;
   font-size: 20px;
@@ -125,9 +124,9 @@ a {
   font-size: 23px;
 }
 .location-special {
-  font-family: RalewayMedium;
   padding-left: 10px;
-  color: black;
+  font-family: LatoLight;
+
 }
 
 #languages table {
@@ -163,14 +162,12 @@ a {
 }
 .projectName {
   font-family: Lato;
-  font-weight: bold;
   font-size: 25px;
-  text-decoration: underline;
-  color: rgba(1, 1, 1, 0.8);
-  text-decoration-color: rgba(1, 1, 1, 0.5);
 }
 .forEntreprise {
   padding-left: 10px;
+  font-family: LatoLight;
+  color: var(--main-color)
 }
 .entreprise {
   font-style: italic;
@@ -184,7 +181,9 @@ a {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
+.content{
+  color: black;
+}
 .sepProject {
   border-style: dashed;
   border-color: var(--name-element-color);
@@ -201,4 +200,13 @@ a {
   html, body {
     border: none;
   }
+}
+
+.no-margin{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.margin-if-no-content{
+  margin-bottom:15px;
 }
