@@ -24,7 +24,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "node ./convertPdf.js"
+      "pre-commit": "node ./convertPdf.js && git add ./public/cv.pdf"
     }
   }
 }
