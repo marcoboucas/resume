@@ -26,9 +26,8 @@ body {
   height: 190px;
   text-align: center;
   font-family: LatoHairline;
-  background-color:#4a8fd5;  /* fallback for old browsers */
+  background-color: #4a8fd5; /* fallback for old browsers */
   color: white;
-
 }
 h1 {
   font-size: 70px;
@@ -51,7 +50,7 @@ h3 {
   font-size: 28px;
 }
 h4 {
-  font-size: 30px;
+  font-size: 27px;
   text-transform: uppercase;
   font-family: LatoLight;
   margin: 0px;
@@ -97,19 +96,18 @@ a {
 #education,
 #techSkills,
 #languages {
-  margin-top: 13px;
+  margin-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .location,
 .date {
   padding: 0px;
   margin: 0px;
-  color:black;
+  color: black;
 }
-
 
 .tech-category {
   display: block;
@@ -129,7 +127,6 @@ a {
 .location-special {
   padding-left: 10px;
   font-family: LatoLight;
-
 }
 
 #languages table {
@@ -172,7 +169,7 @@ a {
 .forEntreprise {
   padding-left: 10px;
   font-family: LatoLight;
-  color: var(--main-color)
+  color: var(--main-color);
 }
 .entreprise {
   font-style: italic;
@@ -187,7 +184,7 @@ a {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.content{
+.content {
   color: black;
 }
 .sepProject {
@@ -205,19 +202,20 @@ a {
 }
 
 @media print {
-  html, body {
+  html,
+  body {
     border: none;
   }
 }
 
-.no-margin{
+.no-margin {
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.margin-if-no-content{
-  margin-bottom:15px;
+.margin-if-no-content {
+  margin-bottom: 15px;
 }
-strong{
+strong {
   font-weight: bold;
 }
