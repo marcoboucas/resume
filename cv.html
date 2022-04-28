@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<head>
+	<title>CV</title>
+	<link rel="stylesheet" href="font.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+		integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+</head>
+
+<body>
+	<header id="header">
+		<h1>Marco <strong>Boucas</strong></h1>
+		<h2>
+			{% if en %}Master of Science in Engineering Student & Data Scientist{% endif %}
+			{% if fr %}Etudiant en école d'ingénieur & Data Scientist{% endif %}
+		</h2>
+		<!--<h3>
+			{% if en %}Looking for a internship in Artiﬁcial Intelligence, available in April 2022{% endif %}
+			{% if fr %}En recherche d'un stage en Intelligence Artiﬁcielle, disponible en avril 2022.{% endif %}
+		</h3>-->
+	</header>
+	<section id="leftSide">
+		<div id="information">
+			<h4>Information</h4>
+			<table>
+				<tr>
+					<td><i class="fas fa-at"></i></td>
+					<td><a href="mailto:marco.boucas@hotmail.fr">marco.boucas@hotmail.fr</a></td>
+				</tr>
+				
+				<tr>
+					<td><i class="fas fa-house-user"></i></td>
+					<td>Paris, 75006</td>
+				</tr>
+				<tr>
+					<td><i class="fas fa-home"></i></td>
+					<td><strong><a href="https://marco.boucas.fr" target="_blank">marco.boucas.fr</a></strong></td>
+				</tr>
+				<tr>
+					<td><i class="fab fa-linkedin"></i></td>
+					<td><a href="https://www.linkedin.com/in/boucasmarco">linkedin.com/in/boucasmarco</a></td>
+				</tr>
+				<tr>
+					<td><i class="fab fa-github-square"></i></td>
+					<td><a href="https://github.com/marcoboucas">github.com/marcoboucas</a></td>
+				</tr>
+
+			</table>
+		</div>
+		<hr class="sepProject">
+		<div id="education">
+			<h4>Education</h4>
+			<div>
+				<h5>Digital Tech Year</h5>
+				<p class="no-margin">
+					<span class="date">Feb. 2020 - Jun. 2020</span>
+					|
+					<span class="location">Paris Digital Lab</span>
+				</p>
+
+				<p class="elementDescription">
+				<ul class="content">
+					<li>
+						{% if en %}Admitted to the one-year digital technology specialisation program.{% endif %}
+						{% if fr %}Admis dans ce programme de césure autour des nouvelles technologies{% endif %}
+
+					</li>
+					<li>
+						{% if en %}One semester of agile prototyping at the ParisDigitalLab, developing real-world
+						projects for
+						French Organizations.{% endif %}
+						{% if fr %}Un semestre de prototyping agile au ParisDigitalLab, dévelopement de projets avec des
+						entreprises françaises{% endif %}
+					</li>
+					<li>
+						{% if en %}One semester international work experience as an intern in a startup or large
+						company.{% endif %}
+						{% if fr %}Un semestre à l'international en tant que stagiaire dans une startup{% endif %}
+
+					</li>
+				</ul>
+				</p>
+			</div>
+
+			<div>
+				<h5>
+					{% if en %}Master of Science in Engineering at CentraleSupélec{% endif %}
+					{% if fr %}Ingénieur CentraleSupélec{% endif %}
+				</h5>
+				<p class="no-margin">
+					<span class="date">Sept. 2018 - Present</span>
+					|
+					<span class="location">CentraleSupélec</span>
+				</p>
+
+				<p class="margin-if-no-content elementDescription">
+					{% if en %}CentraleSupélec is an elite Engineering School, member of France's Grandes Ecoles, based
+					on a highly
+					selective recruitement process.{% endif %}
+					{% if fr %}CentraleSupélec est une école d'ingénieurs, membre des Grandes Ecoles françaises,
+					qui repose sur un processus de recrutement très sélectif.{% endif %}
+
+				</p>
+			</div>
+
+			<div>
+				<h5>
+					{% if en %}Intensive preparatory courses{% endif %}
+					{% if fr %}Classe Préparatoire aux Grandes Ecoles{% endif %}
+				</h5>
+				<p class="no-margin">
+					<span class="date">2016-2018</span>
+					|
+					<span class="location">Saint-Louis</span>
+				</p>
+				<p class="margin-if-no-content elementDescription">
+					{% if en %}Intensive courses in Maths, Physics, Engineering Science for the french Grandes Ecoles.{%
+					endif %}
+					{% if fr %}Cours intensifs en Maths, Physique et Science de l'Ingénieur{% endif %}
+
+				</p>
+			</div>
+		</div>
+		<hr class="sepProject">
+		<div id="techSkills">
+			<h4>
+				{% if en %}Skills{% endif %}
+				{% if fr %}Compétences{% endif %}
+			</h4>
+
+			<!-- Certifications -->
+			<span class="tech-category">Certifications</span>
+			<a
+				href="https://www.coursera.org/account/accomplishments/specialization/JL5VPNFSFWJR?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n">
+				<div class="certification">
+					<img src="deeplearningai.jfif" class="certification-image"/>
+					<div  class="certification-name">Natural Language Processing</div>
+				</div>
+			</a>
+
+			<!-- Skills -->
+			<span class="tech-category">Languages</span>
+			<span class="skill">Python</span>•
+			<span class="skill">Javascript/Typescript</span>•
+			<span class="skill">HTML/CSS</span>
+			<span class="skill">C</span>
+			<span class="tech-category">DataScience</span>
+			<span class="skill">Celery (python)</span>•
+			<span class="skill">Numpy</span>•
+			<span class="skill">Pandas</span>•
+			<span class="skill">Selenium</span>•
+			<span class="skill">Scikit-Learn</span>•
+			<span class="skill">Keras/Tensorflow</span>•
+			<span class="skill">NLTK</span>•
+			<span class="skill">NLP</span>•
+			<span class="skill">ComputerVision</span>
+			<span class="tech-category">Web</span>
+			<span class="skill">NodeJs</span>•
+			<span class="skill">Express</span>•
+			<span class="skill">Sequelize</span>•
+			<span class="skill">NGINX</span>•
+			<span class="skill">ReactJs</span>•
+			<span class="skill">MaterialUI</span>•
+			<span class="skill">Socket.io</span>
+			<span class="tech-category">Working Tools</span>
+			<span class="skill">Linux</span>•
+			<span class="skill">Windows</span>•
+			<span class="skill">Git</span>•
+			<span class="skill">Latex</span>
+			<span class="tech-category">Innovative Methodologies</span>
+			<span class="skill">Design Thinking</span>•
+			<span class="skill">Agile (Scrum) Methodology</span>
+		</div>
+		<div id="languages">
+			<table>
+				<tr>
+					<td><img src="./flags/french.svg" class="flag" /></td>
+					<td class="language">
+						{% if en %}French{% endif %}
+						{% if fr %}Français{% endif %}
+					</td>
+					<td class="language-value">
+						{% if en %}Native{% endif %}
+						{% if fr %}Langue Maternelle{% endif %}
+					</td>
+				</tr>
+				<tr>
+					<td><img src="./flags/english.svg" class="flag" /></td>
+					<td class="language">
+						{% if en %}English{% endif %}
+						{% if fr %}Anglais{% endif %}
+					</td>
+					<td class="language-value">
+						{% if en %}Fluent (IELTS: 8){% endif %}
+						{% if fr %}Courant (IELTS : 8){% endif %}
+					</td>
+				</tr>
+				<tr>
+					<td><img src="./flags/german.svg" class="flag" /></td>
+					<td class="language">
+						{% if en %}German{% endif %}
+						{% if fr %}Allemand{% endif %}
+					</td>
+					<td class="language-value">
+						{% if en %}Good Notions{% endif %}
+						{% if fr %}Bonnes Notions{% endif %}
+					</td>
+				</tr>
+				<tr>
+					<td><img src="./flags/spanish.svg" class="flag" /></td>
+					<td class="language">
+						{% if en %}Spanish{% endif %}
+						{% if fr %}Espagnol{% endif %}
+					</td>
+					<td class="language-value">
+						{% if en %}Notions{% endif %}
+						{% if fr %}Notions{% endif %}
+					</td>
+				</tr>
+			</table>
+		</div>
+	</section>
+	<section id="rightSide">
+		<div id="projects">
+			<h4>
+				{% if en %}Experiences & Projects{% endif %}
+				{% if fr %}Expérenciences et Projets{% endif %}
+			</h4>
+			<div>
+				<h5>
+					{% if en %}Data Scientist / Developer{% endif %}
+					{% if fr %}Data Scientist / Developpeur{% endif %}<span class="location-special">| <a href="https://bivwak.bnpparibas"
+							target="_blank">BNP Paribas (BivwAk!)</a></span></h5>
+				<p class="date">Mar 2021 - Aug 2021 | <span class="location">Paris</span></p>
+				<div class="elementDescription">
+					<div class="description">
+						{% if en %}BivwAk! is BNP Paribas' transformation hub, that aims at developing new services and new
+						business models, accelerating the BNP Paribas engagement strategy.{% endif %}
+						{% if fr %}BivwAk! est le centre de transformation de BNP Paribas, qui vise à développer de nouveaux services et de nouveaux business models, en accélérant la stratégie d'engagement de BNP Paribas.{% endif %}
+
+
+					</div>
+					<div class="content">
+						{% if en %}Development of {% endif %}{% if fr %}Développement de {% endif %}<a
+							href="https://www.linkedin.com/posts/bivwak-by-bnpparibas_data-activity-6815909823708753921-uDIX/">TESS
+							(Tool of Ethic, Sustainability & Security)</a>.
+						{% if fr %}Utilisation de <strong>web scraping et NLP</strong> pour analyser automatiquement les informations légales et sécurité de fournisseurs de services sur la base de données publiques et sites webs.{% endif %}
+						{% if en %}Use of <strong>web scraping and NLP</strong> to automatically analyze the legal and security
+						information from service providers based on public data.{% endif %}
+
+						<br />
+						<span class="techs">Scikit-Learn - Pandas - Selenium - Flask - React - Typescript - REST API
+						</span>
+					</div>
+				</div>
+			</div>
+			<hr class="sepProject">
+			<div>
+				<h5>Machine Learning Intern <span class="location-special">| <a href="https://73strings.com"
+							target="_blank">73Strings</a></span></h5>
+				<p class="date">Sept 2020 - Feb 2021 | <span class="location">Paris</span></p>
+				<div class="elementDescription">
+					<div class="description">
+						{% if en %}73 Strings has been set up to fuse the best in technology with a deep understanding
+						of critical
+						insights to make capital
+						more efficient.{% endif %}
+						{% if fr %}73 Strings a été mis en place pour fusionner le meilleur de la technologie avec une
+						compréhension approfondie de la finance afin de rendre le capital plus efficace.{%
+						endif
+						%}
+
+					</div>
+					<div class="content">
+						{% if en %}Development of <strong>NLP algorithms and models for financial texts</strong>. Use of
+						Topic
+						Modeling,
+						Sentiment Analysis,
+						Classification algorithms, Abstractive Summarization Models to retrive information from long
+						texts.{% endif %}
+						{% if fr %}Développement <strong>d'algorithmes et de modèles de NLP pour les textes
+							financiers</strong>.
+						Utilisation de <I>Topic Modeling, Sentiment Analysis, Classification algorithms, Abstractive
+							Summarization Models</I> pour récupérer de l'information des textes
+						longs.{% endif %}
+						<br />
+						<span class="techs">GPT-3 - Transformers (GPT2, DistilBert, PEGASUS) - PyTorch - Scikit-Learn -
+							Pandas - REST API </span>
+					</div>
+				</div>
+			</div>
+			<hr class="sepProject">
+			<div>
+				<h5>Datathon NLP <span class="location-special">| <a href="https://cib.bnpparibas.com/"
+							target="_blank">BNP
+							CIB</a> & <a href="https://bivwak.bnpparibas/" target="_blank">Bivwak!</a></span></h5>
+				<p class="date">Nov 2020 | <span class="location">Paris</span></p>
+				<div class="elementDescription">
+					<div class="description">
+						{% if en %}A Data Responsible Challenge, with the objective of assessing software suppliers
+						according to 3
+						themes: <strong>ethics, security and sustainability.</strong>{% endif %}
+						{% if fr %}Un "Data Responsible Challenge", dont l'objectif est d'évaluer les fournisseurs de
+						logiciels selon 3 thèmes : <strong>l'éthique, la sécurité et la durabilité</strong>.{% endif %}
+
+					</div>
+					<div class="content">
+						{% if en %}With a team of students and members of BNP Paribas, we imagined a system to assess
+						software
+						suppliers and ended up in 2nd place.{% endif %}
+						{% if fr %}Avec une équipe d'étudiants et de membres de BNP Paribas, nous avons imaginé un
+						système pour évaluer les fournisseurs de logiciels et nous avons fini deuxième .{%
+						endif %}
+
+					</div>
+				</div>
+			</div>
+			<hr class="sepProject">
+			<div>
+				<h5>Data Scientist & Agile Prototyper <span class="location-special">| <a
+							href="https://paris-digital-lab.com/" target="_blank">Paris Digital Lab</a></span></h5>
+				<p class="date">2020 | <span class="location">Paris</span></p>
+				<div class="elementDescription">
+					<div class="description">
+						{% if en %}ParisDigitalLab is an open innovation training device to enable students to become
+						proficient in
+						various technologies through the realization of real-world projects, using scrum methodology.{%
+						endif %}
+						{% if fr %}ParisDigitalLab est un dispositif de formation à l'innovation qui permet aux
+						étudiants de maîtriser différentes technologies par la réalisation de projets concrets, en
+						utilisant la méthode scrum.{% endif %}
+
+					</div>
+					<div class="content">
+						<ul>
+							<li class="project">
+								<h6><span class="projectName">{% if en %}Recommender System{% endif %}
+										{% if fr %}Système de Recommandation{% endif %}</span><span
+										class="forEntreprise">{% if en %}for{% endif %}
+										{% if fr %}pour{% endif %}
+										<a href="https://flashbrand.me/"><span class="entreprise">BNP Paribas Asset
+												Management</span></a></span></h6>
+								<div class="description">
+									{% if en %}BNP Paribas Asset Management is the dedicated, autonomous asset
+									management business
+									of BNP Paribas Group{% endif %}
+									{% if fr %}BNP Paribas Asset Management est l'activité de gestion d'actifs dédiée et
+									autonome du groupe BNP Paribas{% endif %}
+
+								</div>
+								<div class="content">
+									{% if en %}We created a recommender system that finds the best blog articles and
+									internal
+									resources for a given product. Using
+									State-of-the-Art models such as DistilBERT, finBERT and Longformer we were able to
+									summarize articles for the Sales,
+									making easier the task of finding relevant documents.{% endif %}
+									{% if fr %}Nous avons créé un système de recommandation qui permet de trouver les
+									meilleurs articles de blog et ressources internes pour un produit donné. En
+									utilisant des modèles de pointe tels que DistilBERT, finBERT et Longformer, nous
+									avons pu résumer les articles pour les Sales.{% endif %}
+									</br>
+									<span class="techs">Transformers (DistilBERT, finBERT) - PyTorch -
+										Scikit-Learn</span>
+								</div>
+							</li>
+							<li class="project">
+								<h6><span class="projectName">{% if en %}Emotions Recognition in Videos{% endif %}
+										{% if fr %}Détection d'émotions dans la vidéo{% endif %}</span><span
+										class="forEntreprise">{% if en %}for{% endif %}
+										{% if fr %}pour{% endif %} <a href="https://flashbrand.me/"><span
+												class="entreprise">Flashbrand</span></a></span></h6>
+								<div class="description">
+									{% if en %}Flashbrand is an innovative startup that aims to revolutionize feedbacks
+									and HR
+									methods using AI and an employee centred approach.{% endif %}
+									{% if fr %}Flashbrand est une start-up innovante qui vise à révolutionner les
+									feedbacks et les méthodes RH en utilisant l'IA et une approche centrée sur
+									l'employé.{% endif %}
+
+								</div>
+								<div class="content">
+									{% if en %}Creation of a <strong>software capturing video in real time</strong> from
+									the user.
+									Use of Machine Learning algorithms to classify emotions in a coach bot.{% endif %}
+									{% if fr %}Création d'un <strong>système de capture vidéo en temps réel</strong> de
+									l'utilisateur. Utilisation d'algorithmes de Machine Learning pour classer
+									les émotions dans un coach bot.{% endif %}
+									</br>
+									<span class="techs">NodeJs - Microsoft Azure - Transformers (DistilBERT) -
+										VueJs</span>
+								</div>
+							</li>
+							<li class="project">
+								<h6><span class="projectName">{% if en %}Coefficient Computation{% endif %}
+										{% if fr %}Estimation de Coefficient{% endif %}</span><span
+										class="forEntreprise">{% if en %}for{% endif %}
+										{% if fr %}pour{% endif %} <a href="https://www.safran-group.com/"><span
+												class="entreprise">RunWaiz Safran</span></a></span></h6>
+								<div class="description">
+									{% if en %}RunWaiz is the winner of the "We Love Intrapreneurs" program of Safran,
+									it intends
+									to create an airport decision making tool based on runwaiz conditions.{% endif %}
+									{% if fr %}RunWaiz est le gagnant du programme "We Love Intrapreneurs" de Safran,
+									ils
+									ont l'intention de créer un outil d'aide à la décision pour les aéroports.{% endif
+									%}
+
+								</div>
+								<div class="content">
+									{% if en %}Creation of a <strong>Machine Learning pipeline</strong>. Search for the
+									best
+									algorithm to evaluate the runway condition based on sensors outputs.{% endif %}
+									{% if fr %}Création d'une <strong>pipeline de Machine Learning</strong>. Recherche
+									du meilleur algorithme pour évaluer l'état de la piste sur la base des sorties des
+									capteurs.{% endif %}
+									</br>
+									<span class="techs">Scikit-Learn - Keras - Numpy - Pandas</span>
+								</div>
+
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--
+			<hr class="sepProject">
+			<div>
+				<h5>{% if en %}Data Scientist Student{% endif %}
+					{% if fr %}Etudiant en IA{% endif %} <span class="location-special">| <a
+							href="https://www.centralesupelec.fr/" target="_blank">CentraleSupélec</a></span></h5>
+				<p class="date">2018-2019 | <span class="location">Paris</span></p>
+				<div class="elementDescription">
+					<div class="description">
+						{% if en %}CentraleSupélec courses require the completion of projects to validate the skills
+						acquired
+						during the studies.</br>
+						Courses : Big Data, ML, Computer Science, Statistics, Distributed Calculus{% endif %}
+						{% if fr %}Les formations de CentraleSupélec nécessitent la réalisation de projets pour valider
+						les compétences acquises pendant les études.</br>
+						Cours : Big Data, ML, Informatique, Statistiques, Calcul distribué{% endif %}
+
+					</div>
+					<div class="content">
+						<ul>
+							
+							<li class="project">
+								<h6><span class="projectName">Tweets Analysis</h6>
+								<span class="content">Detection of movies audience score based on a scraped database of
+									tweets. Use and comparaison of several algorithms and methods (TF-IDF, Bag of words
+									and LSTM with Embedding).</span></br>
+								<span class="techs">NLTK - Numpy/Pandas - Keras/Tensorflow - LSTM</span>
+							</li>
+							
+							<li class="project">
+								<h6><span class="projectName">
+										{% if en %}Clustering pedagogical platform{% endif %}
+										{% if fr %}Plateforme Pédagogique sur le Clustering{% endif %}</span></h6>
+								<span class="content">
+									{% if en %}Creation of a web platform allowing CentraleSupélec students to
+									easily <strong>learn Clustering algorithms</strong>. Development of exercices and
+									notebooks tests{% endif %}
+									{% if fr %}Création d'une plateforme web permettant aux étudiants d'apprendre
+									facilement les <strong>algorithmes de clustering</strong>. Développement
+									d'exercices et
+									de notebooks{% endif %}</span></br>
+								<span class="techs">Django - Jupyter - K-Means - DBSCAN - Hierarchical Clustering</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<hr class="sepProject">
+			<div>
+				<h5>Data Scientist Student - MyRezIn3D <span class="location-special">| <a href="https://viarezo.fr/"
+							target="_blank">ViaRézo</a></span></h5>
+				<p class="date">2018 | <span class="location">Paris</span></p>
+				<div class="elementDescription">
+					<div class="description">
+						ViaRézo is an association of students dedicated to the management of the internet network on the
+						student residence (2,000 members).
+					</div>
+					<div class="content">
+						Creation of a <strong>3D modeling platform</strong> for CentraleSupélec students residences.
+						Monitoring the networks elements of the infrastructure (wifi hotspots, switches, ...).</br>
+						<span class="techs">NodeJs - Python - Numpy - REST API - Socket.io </span>
+					</div>
+
+					</p>
+				</div>
+				-->
+			<!--
+				<hr class="sepProject">
+				<div>
+					<h5>Website Developer - Automatants Website <span class="location-special">| <a href="https://automatants.cs-campus.fr/" target="_blank">Automatants</a></span></h5>
+					<p class="date">2018-2019 | <span class="location">Paris</span></p>
+					<div class="elementDescription">
+						<div class="description">
+							Automatants is an association of students promoting Artificial Intelligence on the Paris
+							Saclay campus.
+						</div>
+						<div class="content">
+							Development of the website <a
+								href="https://automatants.cs-campus.fr">automatants.cs-campus.fr</a>, creation of a
+							<strong>self-training system</strong> allowing members to follow formations and practice on
+							exercices.</br>
+							<span class="techs">NodeJs - Express - Sequelize</span>
+						</div>
+						</p>
+					</div>
+				</div>
+				-->
+	</section>
+
+</body>
+
+</html>
