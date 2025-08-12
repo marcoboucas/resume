@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checking out code from the repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setting up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
 
@@ -33,7 +33,7 @@ jobs:
           python generate_pdfs.py
 
       - name: Keep pdf files
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: resume
           path: resume_*.pdf
