@@ -121,9 +121,13 @@ a {
 
 .location,
 .date {
-  padding: 0px;
+  padding: 2px 6px;
   margin: 0px;
-  color: black;
+  color: #666;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  font-size: 16px;
+  display: inline-block;
 }
 
 .tech-category {
@@ -153,6 +157,22 @@ a {
 
 #languages table {
   width: 100%;
+}
+
+table td:first-child {
+  padding-right: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #3891f0;
+}
+
+table tr {
+  padding: 4px 0;
+}
+
+table td {
+  vertical-align: middle;
+  padding: 2px 0;
 }
 .flag {
   width: 24px;
