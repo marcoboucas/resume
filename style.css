@@ -18,11 +18,11 @@ body {
   font-family: LatoLight;
   font-size: 20px;
   color: var(--main-color);
-  border: solid 1px black;
+  border: none;
 }
 
 #header {
-  border-bottom: solid 1px var(--headers-color);
+  border-bottom: solid 2px #3891f0;
   position: absolute;
   width: 1210px;
   top: 0px;
@@ -30,8 +30,9 @@ body {
   height: 190px;
   text-align: center;
   font-family: LatoHairline;
-  background-color: #4a8fd5; /* fallback for old browsers */
-  color: white;
+  background-color: transparent;
+  color: var(--main-color);
+  border-radius: 0 0 15px 15px;
 }
 h1 {
   font-size: 70px;
@@ -60,10 +61,13 @@ h4 {
   text-transform: uppercase;
   font-family: LatoLight;
   margin: 0px;
-  padding: 0px;
+  padding: 10px 15px;
   margin-bottom: 5px;
   display: inline-block;
-  color: var(--headers-color);
+  color: #3891f0;
+  background-color: rgba(56, 145, 240, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid #3891f0;
 }
 
 h5 {
@@ -72,7 +76,12 @@ h5 {
   font-family: RalewayMedium;
   color: #000000cf;
   text-transform: uppercase;
-  padding-bottom: 5px;
+  padding: 8px 12px;
+  background-color: rgba(56, 145, 240, 0.08);
+  border-radius: 6px;
+  border: 1px solid rgba(56, 145, 240, 0.2);
+  display: inline-block;
+  margin-bottom: 8px;
 }
 h6 {
   font-size: 20px;
@@ -102,10 +111,12 @@ a {
 #education,
 #techSkills,
 #languages {
-  margin-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: 15px;
+  padding: 15px 20px;
   margin-bottom: 18px;
+  background-color: rgba(56, 145, 240, 0.02);
+  border-radius: 12px;
+  border: 1px solid rgba(56, 145, 240, 0.1);
 }
 
 .location,
@@ -118,8 +129,13 @@ a {
 .tech-category {
   display: block;
   font-size: 20px;
-  color: #0000008c;
+  color: #3891f0;
   font-family: LatoBlack;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  background-color: rgba(56, 145, 240, 0.1);
+  border-radius: 4px;
+  display: inline-block;
 }
 .skill {
   font-size: 20px;
@@ -169,8 +185,13 @@ a {
 .projectName {
   font-family: Lato;
   font-size: 25px;
-  color: var(--main-color);
-  font-weight: 500;
+  color: #3891f0;
+  font-weight: 600;
+  padding: 4px 8px;
+  background-color: rgba(56, 145, 240, 0.08);
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 8px;
 }
 .forEntreprise {
   padding-left: 10px;
@@ -181,9 +202,15 @@ a {
   font-style: italic;
 }
 .techs {
-  color: #1471ff;
+  color: #3891f0;
   font-style: italic;
   margin-bottom: 15px;
+  padding: 6px 12px;
+  background-color: rgba(56, 145, 240, 0.1);
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid rgba(56, 145, 240, 0.2);
 }
 
 .elementDescription {
@@ -194,14 +221,15 @@ a {
   color: black;
 }
 .sepProject {
-  border-style: dashed;
-  border-color: var(--name-element-color);
+  border-style: solid;
+  border-color: #3891f0;
   margin-top: 15px;
   margin-bottom: 15px;
-  border-width: 1px;
-  margin-left: 2%;
-  margin-right: 2%;
-  width: 96%;
+  border-width: 1px 0 0 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  opacity: 0.3;
 }
 .description {
   font-style: italic;
@@ -231,8 +259,12 @@ strong {
   display: flex;
   align-items: center;
   margin-left: 10px;
-  margin-top: 5px;
+  margin-top: 8px;
   margin-bottom: 10px;
+  padding: 6px 10px;
+  background-color: rgba(56, 145, 240, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(56, 145, 240, 0.15);
 }
 .certification-image {
   width: 30px;
