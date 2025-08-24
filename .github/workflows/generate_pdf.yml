@@ -29,8 +29,7 @@ jobs:
 
       - name: Generate the html files and the pdfs
         run: |
-          python generate_html_documents.py
-          python generate_pdfs.py
+          python generate.py
 
       - name: Keep pdf files
         uses: actions/upload-artifact@v4
