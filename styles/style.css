@@ -18,20 +18,21 @@ body {
   font-family: LatoLight;
   font-size: 20px;
   color: var(--main-color);
-  border: solid 1px black;
+  border: none;
 }
 
 #header {
-  border-bottom: solid 1px var(--headers-color);
+  border-bottom: solid 2px #3891f0;
   position: absolute;
   width: 1210px;
   top: 0px;
   left: 0px;
-  height: 190px;
+  height: 150px;
   text-align: center;
   font-family: LatoHairline;
-  background-color: #4a8fd5; /* fallback for old browsers */
-  color: white;
+  background: linear-gradient(135deg, rgba(56, 145, 240, 0.08) 0%, rgba(56, 145, 240, 0.03) 100%);
+  color: var(--main-color);
+  /* border-radius: 0 0 15px 15px; */
 }
 h1 {
   font-size: 70px;
@@ -47,8 +48,9 @@ h3 {
   margin: 5px;
 }
 h2 {
+  font-family: LatoBold;
   font-size: 30px;
-  color: white;
+  color: #3891f0;
 }
 h3 {
   font-size: 24px;
@@ -58,12 +60,15 @@ h3 {
 h4 {
   font-size: 27px;
   text-transform: uppercase;
-  font-family: LatoLight;
+  font-family: LatoBold;
   margin: 0px;
-  padding: 0px;
+  padding: 10px 15px;
   margin-bottom: 5px;
   display: inline-block;
-  color: var(--headers-color);
+  color: #3891f0;
+  background-color: rgba(56, 145, 240, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid #3891f0;
 }
 
 h5 {
@@ -72,7 +77,12 @@ h5 {
   font-family: RalewayMedium;
   color: #000000cf;
   text-transform: uppercase;
-  padding-bottom: 5px;
+  padding: 8px 12px;
+  background-color: rgba(56, 145, 240, 0.08);
+  border-radius: 6px;
+  border: 1px solid rgba(56, 145, 240, 0.2);
+  display: inline-block;
+  margin-bottom: 8px;
 }
 h6 {
   font-size: 20px;
@@ -92,8 +102,8 @@ a {
 }
 #leftSide {
   position: absolute;
-  top: 190px;
-  left: 0px;
+  top: 150px;
+  left: 8px;
   width: 450px;
   height: 1480px;
 }
@@ -101,25 +111,38 @@ a {
 #information,
 #education,
 #techSkills,
+#hobbies,
 #languages {
-  margin-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 18px;
+  margin-top: 8px;
+  padding: 10px 10px;
+  margin-bottom: 4px;
+  background-color: rgba(56, 145, 240, 0.02);
+  border-radius: 12px;
+  border: 1px solid rgba(56, 145, 240, 0.1);
 }
 
 .location,
 .date {
-  padding: 0px;
+  padding: 2px 6px;
   margin: 0px;
-  color: black;
+  color: #666;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  font-size: 16px;
+  display: inline-block;
 }
 
 .tech-category {
+
   display: block;
   font-size: 20px;
-  color: #0000008c;
+  color: #3891f0;
   font-family: LatoBlack;
+  margin-top: 2px;
+  padding: 4px 8px;
+  background-color: rgba(56, 145, 240, 0.1);
+  border-radius: 4px;
+  display: inline-block;
 }
 .skill {
   font-size: 20px;
@@ -138,6 +161,22 @@ a {
 #languages table {
   width: 100%;
 }
+
+table td:first-child {
+  padding-right: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #3891f0;
+}
+
+table tr {
+  padding: 4px 0;
+}
+
+table td {
+  vertical-align: middle;
+  padding: 2px 0;
+}
 .flag {
   width: 24px;
   height: 24px;
@@ -152,7 +191,7 @@ a {
 }
 #rightSide {
   position: absolute;
-  top: 190px;
+  top: 140px;
   left: 450px;
   width: 750px;
   height: 1480px;
@@ -164,13 +203,34 @@ a {
   padding-right: 20px;
 }
 .project {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
+.projectsList {
+  list-style-type: none;
+}
+.project .content {
+  display: block;
+}
+.project .content ul {
+  list-style-type: '- ';
+  padding-left: 1.2em;
+  margin: 0px;
+}
+
+.project .content ul li:not(:last-child){
+  margin-bottom: 6px; 
+}
+
 .projectName {
   font-family: Lato;
   font-size: 25px;
-  color: var(--main-color);
-  font-weight: 500;
+  color: #3891f0;
+  font-weight: 600;
+  padding: 4px 8px;
+  background-color: rgba(56, 145, 240, 0.08);
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 4px;
 }
 .forEntreprise {
   padding-left: 10px;
@@ -181,9 +241,15 @@ a {
   font-style: italic;
 }
 .techs {
-  color: #1471ff;
+  color: #3891f0;
   font-style: italic;
-  margin-bottom: 15px;
+  margin-top: 4px;
+  padding: 6px 12px;
+  background-color: rgba(56, 145, 240, 0.1);
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid rgba(56, 145, 240, 0.2);
 }
 
 .elementDescription {
@@ -194,14 +260,15 @@ a {
   color: black;
 }
 .sepProject {
-  border-style: dashed;
-  border-color: var(--name-element-color);
+  border-style: solid;
+  border-color: #3891f0;
   margin-top: 15px;
   margin-bottom: 15px;
-  border-width: 1px;
-  margin-left: 2%;
-  margin-right: 2%;
-  width: 96%;
+  border-width: 1px 0 0 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  opacity: 0.3;
 }
 .description {
   font-style: italic;
@@ -231,8 +298,12 @@ strong {
   display: flex;
   align-items: center;
   margin-left: 10px;
-  margin-top: 5px;
+  margin-top: 8px;
   margin-bottom: 10px;
+  padding: 6px 10px;
+  background-color: rgba(56, 145, 240, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(56, 145, 240, 0.15);
 }
 .certification-image {
   width: 30px;

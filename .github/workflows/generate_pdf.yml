@@ -8,14 +8,14 @@ jobs:
 
     strategy:
       matrix:
-        python-version: [3.8]
+        python-version: [3.12]
 
     steps:
       - name: Checking out code from the repository
         uses: actions/checkout@v4
 
       - name: Setting up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
 
@@ -29,11 +29,16 @@ jobs:
 
       - name: Generate the html files and the pdfs
         run: |
-          python generate_html_documents.py
-          python generate_pdfs.py
+          python generate.py
 
       - name: Keep pdf files
         uses: actions/upload-artifact@v4
         with:
-          name: resume
-          path: resume_*.pdf
+          name: resume-en
+          path: output/resume_en.pdf
+
+      - name: Keep pdf files
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-fr
+          path: output/resume_fr.pdf

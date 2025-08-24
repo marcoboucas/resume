@@ -2,18 +2,16 @@
 
 <head>
 	<title>CV</title>
-	<link rel="stylesheet" href="font.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-		integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+	<link rel="stylesheet" href="../styles/font.css">
+	<link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
 	<header id="header">
-		<h1>Marco <strong>Boucas</strong></h1>
-		<h2>
-			{% if en %}Master of Science in Engineering Student & Data Scientist{% endif %}
-			{% if fr %}Etudiant en école d'ingénieur & Data Scientist{% endif %}
+		<h1>Marco Boucas</h1>
+		<h2> <strong>
+			AI Engineering Manager
+			</strong>
 		</h2>
 		<!--<h3>
 			{% if en %}Looking for a internship in Artiﬁcial Intelligence, available in April 2022{% endif %}
@@ -25,30 +23,29 @@
 			<h4>Information</h4>
 			<table>
 				<tr>
-					<td><i class="fas fa-at"></i></td>
+					<td>📧</td>
 					<td><a href="mailto:marco.boucas@hotmail.fr">marco.boucas@hotmail.fr</a></td>
 				</tr>
-				
+
 				<tr>
-					<td><i class="fas fa-house-user"></i></td>
+					<td>🏠</td>
 					<td>Paris, 75006</td>
 				</tr>
 				<tr>
-					<td><i class="fas fa-home"></i></td>
+					<td>📍</td>
 					<td><strong><a href="https://marco.boucas.fr" target="_blank">marco.boucas.fr</a></strong></td>
 				</tr>
 				<tr>
-					<td><i class="fab fa-linkedin"></i></td>
+					<td>🔗</td>
 					<td><a href="https://www.linkedin.com/in/boucasmarco">linkedin.com/in/boucasmarco</a></td>
 				</tr>
 				<tr>
-					<td><i class="fab fa-github-square"></i></td>
+					<td>💻</td>
 					<td><a href="https://github.com/marcoboucas">github.com/marcoboucas</a></td>
 				</tr>
 
 			</table>
 		</div>
-		<hr class="sepProject">
 		<div id="education">
 			<h4>Education</h4>
 			<div>
@@ -59,37 +56,26 @@
 					<span class="location">Paris Digital Lab</span>
 				</p>
 
-				<p class="elementDescription">
-				<ul class="content">
-					<li>
-						{% if en %}Admitted to the one-year digital technology specialisation program.{% endif %}
-						{% if fr %}Admis dans ce programme de césure autour des nouvelles technologies{% endif %}
+				<p class="margin-if-no-content elementDescription">
+					{% if en %}Gap year program specializing in new technologies: agile prototyping and project
+					development with French companies, followed by an international startup internship{% endif %}
+					{% if fr %}Programme de césure spécialisé en nouvelles technologies : prototypage agile et
+					développement de projets avec des entreprises françaises, suivi d'un stage international en
+					startup{% endif %}
 
-					</li>
-					<li>
-						{% if en %}One semester of agile prototyping at the ParisDigitalLab, developing real-world
-						projects for
-						French Organizations.{% endif %}
-						{% if fr %}Un semestre de prototyping agile au ParisDigitalLab, dévelopement de projets avec des
-						entreprises françaises{% endif %}
-					</li>
-					<li>
-						{% if en %}One semester international work experience as an intern in a startup or large
-						company.{% endif %}
-						{% if fr %}Un semestre à l'international en tant que stagiaire dans une startup{% endif %}
-
-					</li>
-				</ul>
 				</p>
 			</div>
 
 			<div>
 				<h5>
 					{% if en %}Master of Science in Engineering at CentraleSupélec{% endif %}
-					{% if fr %}Ingénieur CentraleSupélec{% endif %}
+					{% if fr %}Diplôme d'Ingénieur CentraleSupélec{% endif %}
 				</h5>
 				<p class="no-margin">
-					<span class="date">Sept. 2018 - Present</span>
+					<span class="date">
+						{% if en %}Sept. 2018 - {% endif %}
+						{% if fr %}Sept. 2018 - Présent{% endif %}
+					</span>
 					|
 					<span class="location">CentraleSupélec</span>
 				</p>
@@ -104,7 +90,7 @@
 				</p>
 			</div>
 
-			<div>
+			<!-- <div>
 				<h5>
 					{% if en %}Intensive preparatory courses{% endif %}
 					{% if fr %}Classe Préparatoire aux Grandes Ecoles{% endif %}
@@ -120,62 +106,61 @@
 					{% if fr %}Cours intensifs en Maths, Physique et Science de l'Ingénieur{% endif %}
 
 				</p>
-			</div>
+			</div> -->
 		</div>
-		<hr class="sepProject">
 		<div id="techSkills">
 			<h4>
 				{% if en %}Skills{% endif %}
 				{% if fr %}Compétences{% endif %}
-			</h4>
+			</h4><br/>
+		
 
 			<!-- Certifications -->
-			<span class="tech-category">Certifications</span>
-			<a
+			<!-- <span class="tech-category">Certifications</span> -->
+			<!-- <a
 				href="https://www.coursera.org/account/accomplishments/specialization/JL5VPNFSFWJR?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n">
 				<div class="certification">
-					<img src="deeplearningai.jfif" class="certification-image"/>
-					<div  class="certification-name">Natural Language Processing</div>
+					<img src="../assets/deeplearningai.jfif" class="certification-image" />
+					<div class="certification-name">Natural Language Processing</div>
 				</div>
-			</a>
+			</a> -->
 
 			<!-- Skills -->
 			<span class="tech-category">Languages</span>
 			<span class="skill">Python</span>•
 			<span class="skill">Javascript/Typescript</span>•
 			<span class="skill">HTML/CSS</span>
-			<span class="skill">C</span>
+			<br/>
+
 			<span class="tech-category">DataScience</span>
-			<span class="skill">Celery (python)</span>•
-			<span class="skill">Numpy</span>•
-			<span class="skill">Pandas</span>•
-			<span class="skill">Selenium</span>•
-			<span class="skill">Scikit-Learn</span>•
-			<span class="skill">Keras/Tensorflow</span>•
-			<span class="skill">NLTK</span>•
-			<span class="skill">NLP</span>•
-			<span class="skill">ComputerVision</span>
+			<span class="skill">Numpy / Pandas</span>•
+			<span class="skill">Scikit-Learn / Keras</span>•
+			<span class="skill">LlamaIndex / Langchain</span>•
+			<span class="skill">Celery</span>
+			<br/>
+
 			<span class="tech-category">Web</span>
-			<span class="skill">NodeJs</span>•
-			<span class="skill">Express</span>•
-			<span class="skill">Sequelize</span>•
-			<span class="skill">NGINX</span>•
-			<span class="skill">ReactJs</span>•
-			<span class="skill">MaterialUI</span>•
-			<span class="skill">Socket.io</span>
+			<span class="skill">NestJs / NextJs</span>•
+			<span class="skill">FastAPI</span>•
+			<span class="skill">React / Angular</span>•
+			<span class="skill">Socket.io / Websockets</span>
+			<br/>
+		
 			<span class="tech-category">Working Tools</span>
 			<span class="skill">Linux</span>•
 			<span class="skill">Windows</span>•
-			<span class="skill">Git</span>•
-			<span class="skill">Latex</span>
+			<span class="skill">Git</span>
+			<br/>
+
 			<span class="tech-category">Innovative Methodologies</span>
 			<span class="skill">Design Thinking</span>•
 			<span class="skill">Agile (Scrum) Methodology</span>
 		</div>
+		
 		<div id="languages">
 			<table>
 				<tr>
-					<td><img src="./flags/french.svg" class="flag" /></td>
+					<td><img src="../assets/flags/french.svg" class="flag" /></td>
 					<td class="language">
 						{% if en %}French{% endif %}
 						{% if fr %}Français{% endif %}
@@ -186,7 +171,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td><img src="./flags/english.svg" class="flag" /></td>
+					<td><img src="../assets/flags/english.svg" class="flag" /></td>
 					<td class="language">
 						{% if en %}English{% endif %}
 						{% if fr %}Anglais{% endif %}
@@ -197,7 +182,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td><img src="./flags/german.svg" class="flag" /></td>
+					<td><img src="../assets/flags/german.svg" class="flag" /></td>
 					<td class="language">
 						{% if en %}German{% endif %}
 						{% if fr %}Allemand{% endif %}
@@ -208,7 +193,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td><img src="./flags/spanish.svg" class="flag" /></td>
+					<td><img src="../assets/flags/spanish.svg" class="flag" /></td>
 					<td class="language">
 						{% if en %}Spanish{% endif %}
 						{% if fr %}Espagnol{% endif %}
@@ -220,24 +205,157 @@
 				</tr>
 			</table>
 		</div>
+
+		<div id="hobbies">
+			<h4>
+				{% if en %}Hobbies{% endif %}
+				{% if fr %}Loisirs{% endif %}
+			</h4>
+
+			<!-- Skills -->
+			 <ul>
+				<li><span class="skill">Lecture / Ecriture</span></li>
+				<li><span class="skill">Running (Marathon 3h45)</span></li>
+				<!-- <li><span class="skill">HTML/CSS</span></li> -->
+			 </ul>
+		</div>
 	</section>
 	<section id="rightSide">
 		<div id="projects">
 			<h4>
 				{% if en %}Experiences & Projects{% endif %}
-				{% if fr %}Expérenciences et Projets{% endif %}
+				{% if fr %}Expériences et Projets{% endif %}
 			</h4>
+
+			<div>
+				<h5>AI Engineering Manager <span class="location-special">| <a
+							href="https://illuin.tech/" target="_blank">Illuin Technology</a></span></h5>
+				<p class="date">
+					{% if fr %}Mai 2022 - Auj.{% endif %}
+					{% if en %}May 2022 - Now{% endif %}
+					| <span class="location">Paris</span></p>
+				<div class="elementDescription">
+					<div class="description">
+						Scale-up française spécialisée en IA, GenAI et solutions numériques de pointe, développant des solutions d'IA conversationnelle et de traitement de données pour grands comptes (BNP Paribas, Crédit Agricole, EDF...).
+
+					</div>
+					<div class="content">
+						<ul class="projectsList">
+							<li class="project">
+								<h6>
+									<span class="projectName">
+										AI Engineering Manager
+									</span>
+									<p class="date">
+										{% if fr %}Avril 2025 - Auj.{% endif %}
+										{% if en %}April 2025 - Now{% endif %}
+									</p>
+								</h6>
+								
+								<div class="content">
+									<ul>
+										<li>Gestion d'une équipe produit (5 personnes), définition de la roadmap et des priorités. Coordination entre les équipes techniques, produit et commerciales.</li>
+										<li>Développement & Déploiement d'une solution d'analyse Agentique pour la gestion de la relation client (analyse de conversations, extractions d'information et rapports automatisés).</li>
+									</ul>
+									<span class="techs">
+										LLM Evaluation - AI Product Management - Agile Methodologies
+									</span>
+								</div>
+							</li>
+
+							
+
+							<li class="project">
+								<h6>
+									<span class="projectName">
+										Lead AI Engineer
+									</span>
+									<p class="date">
+										{% if fr %}Mai 2024 - Avril 2025{% endif %}
+										{% if en %}May 2024 - April 2025{% endif %}
+									</p>
+								</h6>
+								
+								<div class="content">
+									<ul>
+										<li>Gestion de la roadmap et création d'une solution d'IA & IA Générative d'analyse de conversations, extractions d'information et rapports automatisés.</li>
+										<li>Support technique et fonctionnel aux équipes commerciales et clients.</li>
+										<li>Mise en place & intégration de modèles LLMs, gestion de prompts et évaluation de modèles.</li>
+									</ul>
+									<span class="techs">
+										Typescript - NestJs - FastAPI - LlamaIndex - Langchain - Kubernetes
+									</span>
+								</div>
+							</li>
+
+							
+
+							<li class="project">
+								<h6>
+									<span class="projectName">
+										Senior AI Engineer
+									</span>
+									<p class="date">
+										{% if fr %}Mai 2023 - Juin 2024{% endif %}
+										{% if en %}May 2023 - June 2024{% endif %}
+									</p>
+								</h6>
+								
+								<div class="content">
+									<ul>
+										<li>Au sein des équipes Produits Voix, déploiement et maintenance de modèles et solutions IA.</li>
+										<li>Orchestration de pipelines de Machine Learning & Data Engineering</li>
+									</ul>
+									<span class="techs">
+										Typescript - Angular - TemporalIO - Kubernetes
+									</span>
+								</div>
+							</li>
+
+						
+
+							<li class="project">
+								<h6>
+									<span class="projectName">
+										AI Engineer
+									</span>
+									<p class="date">
+										{% if fr %}Mai 2022 - Mai 2023{% endif %}
+										{% if en %}May 2022 - May 2023{% endif %}
+									</p>
+								</h6>
+								
+								<div class="content">
+									Développement au sein des équipes produits de solutions d'IA d'analyse de la voix et du texte, orchestration de modèles d'IA et d'APIs en live (faible latence, scalabilité, haute disponibilité).
+									</br>
+									<span class="techs">
+										Typescript - Angular - RxJS - Sklearn - Transformers (HuggingFace)
+									</span>
+								</div>
+							</li>
+							
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<hr class="sepProject">
+
 			<div>
 				<h5>
 					{% if en %}Data Scientist / Developer{% endif %}
-					{% if fr %}Data Scientist / Developpeur{% endif %}<span class="location-special">| <a href="https://bivwak.bnpparibas"
-							target="_blank">BNP Paribas (BivwAk!)</a></span></h5>
+					{% if fr %}Data Scientist / Developpeur{% endif %}<span class="location-special">| <a
+							href="https://bivwak.bnpparibas" target="_blank">BNP Paribas (BivwAk!)</a></span></h5>
 				<p class="date">Mar 2021 - Aug 2021 | <span class="location">Paris</span></p>
 				<div class="elementDescription">
 					<div class="description">
-						{% if en %}BivwAk! is BNP Paribas' transformation hub, that aims at developing new services and new
+						{% if en %}BivwAk! is BNP Paribas' transformation hub, that aims at developing new services and
+						new
 						business models, accelerating the BNP Paribas engagement strategy.{% endif %}
-						{% if fr %}BivwAk! est le centre de transformation de BNP Paribas, qui vise à développer de nouveaux services et de nouveaux business models, en accélérant la stratégie d'engagement de BNP Paribas.{% endif %}
+						{% if fr %}BivwAk! est le centre de transformation de BNP Paribas, qui vise à développer de
+						nouveaux services et de nouveaux business models, en accélérant la stratégie d'engagement de BNP
+						Paribas.{% endif %}
 
 
 					</div>
@@ -245,8 +363,11 @@
 						{% if en %}Development of {% endif %}{% if fr %}Développement de {% endif %}<a
 							href="https://www.linkedin.com/posts/bivwak-by-bnpparibas_data-activity-6815909823708753921-uDIX/">TESS
 							(Tool of Ethic, Sustainability & Security)</a>.
-						{% if fr %}Utilisation de <strong>web scraping et NLP</strong> pour analyser automatiquement les informations légales et sécurité de fournisseurs de services sur la base de données publiques et sites webs.{% endif %}
-						{% if en %}Use of <strong>web scraping and NLP</strong> to automatically analyze the legal and security
+						{% if fr %}Utilisation de <strong>web scraping et NLP</strong> pour analyser automatiquement les
+						informations légales et sécurité de fournisseurs de services sur la base de données publiques et
+						sites webs.{% endif %}
+						{% if en %}Use of <strong>web scraping and NLP</strong> to automatically analyze the legal and
+						security
 						information from service providers based on public data.{% endif %}
 
 						<br />
@@ -261,7 +382,7 @@
 							target="_blank">73Strings</a></span></h5>
 				<p class="date">Sept 2020 - Feb 2021 | <span class="location">Paris</span></p>
 				<div class="elementDescription">
-					<div class="description">
+					<!-- <div class="description">
 						{% if en %}73 Strings has been set up to fuse the best in technology with a deep understanding
 						of critical
 						insights to make capital
@@ -271,7 +392,7 @@
 						endif
 						%}
 
-					</div>
+					</div> -->
 					<div class="content">
 						{% if en %}Development of <strong>NLP algorithms and models for financial texts</strong>. Use of
 						Topic
@@ -284,13 +405,13 @@
 						Utilisation de <I>Topic Modeling, Sentiment Analysis, Classification algorithms, Abstractive
 							Summarization Models</I> pour récupérer de l'information des textes
 						longs.{% endif %}
-						<br />
+					
 						<span class="techs">GPT-3 - Transformers (GPT2, DistilBert, PEGASUS) - PyTorch - Scikit-Learn -
 							Pandas - REST API </span>
 					</div>
 				</div>
 			</div>
-			<hr class="sepProject">
+			<!-- <hr class="sepProject">
 			<div>
 				<h5>Datathon NLP <span class="location-special">| <a href="https://cib.bnpparibas.com/"
 							target="_blank">BNP
@@ -315,8 +436,8 @@
 
 					</div>
 				</div>
-			</div>
-			<hr class="sepProject">
+			</div> -->
+			<!-- <hr class="sepProject">
 			<div>
 				<h5>Data Scientist & Agile Prototyper <span class="location-special">| <a
 							href="https://paris-digital-lab.com/" target="_blank">Paris Digital Lab</a></span></h5>
@@ -424,7 +545,7 @@
 						</ul>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!--
 			<hr class="sepProject">
 			<div>
