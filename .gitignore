@@ -3,3 +3,4 @@ node_modules/
 venv
 *.pdf
 cv_*.html
+.DS_Store

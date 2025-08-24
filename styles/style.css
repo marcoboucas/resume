@@ -27,12 +27,12 @@ body {
   width: 1210px;
   top: 0px;
   left: 0px;
-  height: 190px;
+  height: 150px;
   text-align: center;
   font-family: LatoHairline;
   background: linear-gradient(135deg, rgba(56, 145, 240, 0.08) 0%, rgba(56, 145, 240, 0.03) 100%);
   color: var(--main-color);
-  border-radius: 0 0 15px 15px;
+  /* border-radius: 0 0 15px 15px; */
 }
 h1 {
   font-size: 70px;
@@ -48,6 +48,7 @@ h3 {
   margin: 5px;
 }
 h2 {
+  font-family: Lato;;
   font-size: 30px;
   color: #3891f0;
 }
@@ -101,8 +102,8 @@ a {
 }
 #leftSide {
   position: absolute;
-  top: 190px;
-  left: 0px;
+  top: 150px;
+  left: 8px;
   width: 450px;
   height: 1480px;
 }
@@ -110,10 +111,11 @@ a {
 #information,
 #education,
 #techSkills,
+#hobbies,
 #languages {
-  margin-top: 15px;
-  padding: 15px 20px;
-  margin-bottom: 18px;
+  margin-top: 8px;
+  padding: 10px 10px;
+  margin-bottom: 4px;
   background-color: rgba(56, 145, 240, 0.02);
   border-radius: 12px;
   border: 1px solid rgba(56, 145, 240, 0.1);
@@ -131,11 +133,12 @@ a {
 }
 
 .tech-category {
+
   display: block;
   font-size: 20px;
   color: #3891f0;
   font-family: LatoBlack;
-  margin-bottom: 8px;
+  margin-top: 2px;
   padding: 4px 8px;
   background-color: rgba(56, 145, 240, 0.1);
   border-radius: 4px;
@@ -188,7 +191,7 @@ table td {
 }
 #rightSide {
   position: absolute;
-  top: 190px;
+  top: 140px;
   left: 450px;
   width: 750px;
   height: 1480px;
@@ -200,8 +203,24 @@ table td {
   padding-right: 20px;
 }
 .project {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
+.projectsList {
+  list-style-type: none;
+}
+.project .content {
+  display: block;
+}
+.project .content ul {
+  list-style-type: '- ';
+  padding-left: 1.2em;
+  margin: 0px;
+}
+
+.project .content ul li:not(:last-child){
+  margin-bottom: 6px; 
+}
+
 .projectName {
   font-family: Lato;
   font-size: 25px;
@@ -211,7 +230,7 @@ table td {
   background-color: rgba(56, 145, 240, 0.08);
   border-radius: 6px;
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .forEntreprise {
   padding-left: 10px;
@@ -224,7 +243,7 @@ table td {
 .techs {
   color: #3891f0;
   font-style: italic;
-  margin-bottom: 15px;
+  margin-top: 4px;
   padding: 6px 12px;
   background-color: rgba(56, 145, 240, 0.1);
   border-radius: 15px;

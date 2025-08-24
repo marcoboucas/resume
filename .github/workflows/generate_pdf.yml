@@ -35,5 +35,11 @@ jobs:
       - name: Keep pdf files
         uses: actions/upload-artifact@v4
         with:
-          name: resume
-          path: resume_*.pdf
+          name: resume-en
+          path: output/resume_en.pdf
+
+      - name: Keep pdf files
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-fr
+          path: output/resume_fr.pdf
