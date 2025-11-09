@@ -8,15 +8,22 @@
 
 <body>
 	<header id="header">
-		<h1>Marco Boucas</h1>
-		<h2> <strong>
-			AI Engineering Manager
-			</strong>
-		</h2>
-		<!--<h3>
-			{% if en %}Looking for a internship in Artiﬁcial Intelligence, available in April 2022{% endif %}
-			{% if fr %}En recherche d'un stage en Intelligence Artiﬁcielle, disponible en avril 2022.{% endif %}
-		</h3>-->
+		<div class="name-title-container">
+			<h1>Marco Boucas</h1>
+			<h2> <strong>
+					AI Engineering Manager
+				</strong>
+			</h2>
+		</div>
+		<p class="subtitle">
+			AI Engineering Manager avec 3 ans d'expérience dans la conception de solutions d'IA générative et de machine
+			learning pour des clients du CAC 40.
+			<!-- Expertise reconnue en leadership d'équipe, développement de produits et
+			déploiement de systèmes d'IA à grande échelle. -->
+			Spécialisé dans l'IA conversationnelle et les systèmes
+			agentiques.
+		</p>
+
 	</header>
 	<section id="leftSide">
 		<div id="information">
@@ -56,8 +63,8 @@
 				</h5>
 				<p class="no-margin">
 					<span class="date">
-						{% if en %}Sept. 2018 - {% endif %}
-						{% if fr %}Sept. 2018 - Présent{% endif %}
+						{% if en %}Sept. 2018 - Jun. 2022{% endif %}
+						{% if fr %}Sept. 2018 - Juin. 2022{% endif %}
 					</span>
 					|
 					<span class="location">CentraleSupélec</span>
@@ -91,7 +98,7 @@
 				</p>
 			</div>
 
-			
+
 
 			<!-- <div>
 				<h5>
@@ -115,8 +122,8 @@
 			<h4>
 				{% if en %}Skills{% endif %}
 				{% if fr %}Compétences{% endif %}
-			</h4><br/>
-		
+			</h4><br />
+
 
 			<!-- Certifications -->
 			<!-- <span class="tech-category">Certifications</span> -->
@@ -133,21 +140,21 @@
 			<span class="skill">Python</span>•
 			<span class="skill">Javascript/Typescript</span>•
 			<span class="skill">HTML/CSS</span>
-			<br/>
+			<br />
 
 			<span class="tech-category">DataScience</span>
 			<span class="skill">Numpy / Pandas</span>•
 			<span class="skill">Scikit-Learn / Keras</span>•
 			<span class="skill">LlamaIndex / Langchain</span>•
 			<span class="skill">Celery</span>
-			<br/>
+			<br />
 
 			<span class="tech-category">Web</span>
 			<span class="skill">NestJs / NextJs</span>•
 			<span class="skill">FastAPI</span>•
 			<span class="skill">React / Angular</span>•
 			<span class="skill">Socket.io / Websockets</span>
-			<br/>
+			<br />
 
 			<span class="tech-category">Outils & Méthodologies</span>
 			<span class="skill">Linux</span>•
@@ -155,7 +162,7 @@
 			<span class="skill">Git</span>•
 			<span class="skill">Agile (Scrum) Methodology</span>
 		</div>
-		
+
 		<div id="languages">
 			<table>
 				<tr>
@@ -212,15 +219,25 @@
 			</h4>
 
 			<!-- Skills -->
-			 <ul>
+			<ul>
 				<li><span class="skill">Lecture / Ecriture</span></li>
 				<li><span class="skill">Badmington</span></li>
 				<li><span class="skill">Running (Marathon 3h45)</span></li>
 				<!-- <li><span class="skill">HTML/CSS</span></li> -->
-			 </ul>
+			</ul>
 		</div>
 	</section>
 	<section id="rightSide">
+		<div id="highlights">
+			<h4>
+				{% if en %}Key Achievements{% endif %}
+				{% if fr %}Réalisations Clés{% endif %}
+			</h4>
+
+
+			
+
+		</div>
 		<div id="projects">
 			<h4>
 				{% if en %}Experiences & Projects{% endif %}
@@ -228,114 +245,127 @@
 			</h4>
 
 			<div>
-				<h5>AI Engineering Manager <span class="location-special">| <a
-							href="https://illuin.tech/" target="_blank">Illuin Technology</a></span></h5>
+				<h5>AI Engineering Manager <span class="location-special">| <a href="https://illuin.tech/"
+							target="_blank">Illuin Technology</a></span></h5>
 				<p class="date">
 					{% if fr %}Mai 2022 - Auj.{% endif %}
 					{% if en %}May 2022 - Now{% endif %}
 					| <span class="location">Paris</span></p>
 				<div class="elementDescription">
 					<div class="description">
-						Scale-up française spécialisée en IA, GenAI et solutions numériques de pointe, développant des solutions d'IA conversationnelle et de traitement de données pour grands comptes (La Poste, Orange, EDF...).
+						Scale-up française spécialisée en IA, GenAI et solutions numériques de pointe, développant des
+						solutions d'IA conversationnelle et de traitement de données pour grands comptes (La Poste,
+						Orange, EDF...).
 
 					</div>
 					<div class="content">
-						<ul class="projectsList">
-							<li class="project">
-								<h6>
-									<span class="projectName">
-										AI Engineering Manager
-									</span>
-									<p class="date">
-										{% if fr %}Avril 2025 - Auj.{% endif %}
-										{% if en %}April 2025 - Now{% endif %}
-									</p>
-								</h6>
-								
-								<div class="content">
-									<ul>
-										<li>Gestion d'une équipe produit (5 personnes), définition de la roadmap et des priorités. Coordination entre les équipes techniques, produit et commerciales.</li>
-										<li>Développement & Déploiement d'une solution d'analyse Agentique pour la gestion de la relation client (analyse de conversations, extractions d'information et rapports automatisés).</li>
-									</ul>
-									<span class="techs">
+						<!-- <ul class="projectsList"> -->
+						<!-- <li class="project"> -->
+						<h6>
+							<span class="projectName">
+								AI Engineering Manager
+							</span>
+							<p class="date">
+								{% if fr %}Avril 2025 - Auj.{% endif %}
+								{% if en %}April 2025 - Now{% endif %}
+							</p>
+						</h6>
+
+						<div class="content">
+							<ul>
+								<li>Gestion d'une équipe produit (5 personnes), définition de la roadmap et des
+									priorités. Coordination entre les équipes techniques, R&D, produit et
+									commerciales.</li>
+								<li>Développement Agile d'une solution d'analyse Agentique pour la
+									gestion de la relation client (analyse de conversations, extractions
+									d'information et rapports automatisés) permettant l'analyse de >5M de conversations
+									annuelles.</li>
+							</ul>
+							<!-- <span class="techs">
 										LLM Evaluation - AI Product Management - Agile Methodologies
-									</span>
-								</div>
-							</li>
+									</span> -->
+						</div>
+						<!-- </li> -->
 
-							
 
-							<li class="project">
-								<h6>
-									<span class="projectName">
-										Lead AI Engineer
-									</span>
-									<p class="date">
-										{% if fr %}Mai 2024 - Avril 2025{% endif %}
-										{% if en %}May 2024 - April 2025{% endif %}
-									</p>
-								</h6>
-								
-								<div class="content">
-									<ul>
-										<li>Gestion de la roadmap et création d'une solution d'IA & IA Générative d'analyse de conversations, extractions d'information et rapports automatisés.</li>
-										<li>Support technique et fonctionnel aux équipes commerciales et clients.</li>
-										<li>Mise en place & intégration de modèles LLMs, gestion de prompts et évaluation de modèles.</li>
-									</ul>
-									<span class="techs">
+
+						<!-- <li class="project"> -->
+						<h6>
+							<span class="projectName">
+								Lead AI Engineer
+							</span>
+							<p class="date">
+								{% if fr %}Mai 2024 - Avril 2025{% endif %}
+								{% if en %}May 2024 - April 2025{% endif %}
+							</p>
+						</h6>
+
+						<div class="content">
+							<ul>
+								<li>Gestion d'un produit d'analyse conversationnelle, permettant l'extraction en temps
+									réel d'informations au sein de dialogues.</li>
+								<li>Réaliser un support technique pré-vente et des démonstrations pour plus de 20
+									clients entreprises, dont des groupes internationaux.</li>
+								<li>Mise en place & intégration de modèles LLMs, gestion de prompts et
+									évaluation de modèles.</li>
+							</ul>
+							<!-- <span class="techs">
 										Typescript - NestJs - FastAPI - LlamaIndex - Langchain - Kubernetes
-									</span>
-								</div>
-							</li>
+									</span> -->
+						</div>
+						<!-- </li> -->
 
-							
 
-							<li class="project">
-								<h6>
-									<span class="projectName">
-										Senior AI Engineer
-									</span>
-									<p class="date">
-										{% if fr %}Mai 2023 - Juin 2024{% endif %}
-										{% if en %}May 2023 - June 2024{% endif %}
-									</p>
-								</h6>
-								
-								<div class="content">
-									<ul>
-										<li>Au sein des équipes Produits Voix, déploiement et maintenance de modèles et solutions IA.</li>
-										<li>Orchestration de pipelines de Machine Learning & Data Engineering</li>
-									</ul>
-									<span class="techs">
+
+						<!-- <li class="project"> -->
+						<h6>
+							<span class="projectName">
+								Senior AI Engineer
+							</span>
+							<p class="date">
+								{% if fr %}Mai 2023 - Juin 2024{% endif %}
+								{% if en %}May 2023 - June 2024{% endif %}
+							</p>
+						</h6>
+
+						<div class="content">
+							<ul>
+								<li>Au sein des équipes Produits Voix, déploiement et maintenance de modèles et
+									solutions IA.</li>
+								<li>Orchestration de pipelines de Machine Learning & Data Engineering</li>
+							</ul>
+							<!-- <span class="techs">
 										Typescript - Angular - TemporalIO - Kubernetes
-									</span>
-								</div>
-							</li>
+									</span> -->
+						</div>
+						<!-- </li> -->
 
-						
 
-							<li class="project">
-								<h6>
-									<span class="projectName">
-										AI Engineer
-									</span>
-									<p class="date">
-										{% if fr %}Mai 2022 - Mai 2023{% endif %}
-										{% if en %}May 2022 - May 2023{% endif %}
-									</p>
-								</h6>
-								
-								<div class="content">
-									Développement au sein des équipes produits de solutions d'IA d'analyse de la voix et du texte, orchestration de modèles d'IA et d'APIs en live (faible latence, scalabilité, haute disponibilité).
-									</br>
-									<span class="techs">
+
+						<!-- <li class="project"> -->
+						<h6>
+							<span class="projectName">
+								AI Engineer
+							</span>
+							<p class="date">
+								{% if fr %}Mai 2022 - Mai 2023{% endif %}
+								{% if en %}May 2022 - May 2023{% endif %}
+							</p>
+						</h6>
+
+						<div class="content">
+							Développement au sein des équipes produits de solutions d'IA d'analyse de la voix et
+							du texte, orchestration de modèles d'IA et d'APIs en live (faible latence,
+							scalabilité, haute disponibilité).
+							<!-- </br> -->
+							<!-- <span class="techs">
 										Typescript - Angular - RxJS - Sklearn - Transformers (HuggingFace)
-									</span>
-								</div>
-							</li>
-							
+									</span> -->
+						</div>
+						<!-- </li> -->
 
-						</ul>
+
+						<!-- </ul> -->
 					</div>
 				</div>
 			</div>
@@ -370,14 +400,14 @@
 						security
 						information from service providers based on public data.{% endif %}
 
-						<br />
-						<span class="techs">Scikit-Learn - Pandas - Selenium - Flask - React - Typescript - REST API
-						</span>
+						<!-- <br /> -->
+						<!-- <span class="techs">Scikit-Learn - Pandas - Selenium - Flask - React - Typescript - REST API
+						</span> -->
 					</div>
 				</div>
 			</div>
 
-<!-- 			
+			<!-- 			
 			<hr class="sepProject">
 			<div>
 				<h5>Machine Learning Intern <span class="location-special">| <a href="https://73strings.com"
@@ -635,6 +665,8 @@
 					</div>
 				</div>
 				-->
+		</div>
+
 	</section>
 
 </body>
