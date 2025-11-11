@@ -8,55 +8,76 @@
 
 <body>
 	<header id="header">
-		<div class="name-title-container">
-			<h1>Marco Boucas</h1>
+		<div style="display: flex; flex-direction: column; flex-grow: 1;">
+
 			<h2> <strong>
 					AI Engineering Manager
 				</strong>
 			</h2>
-		</div>
-		<p class="subtitle">
-			AI Engineering Manager avec 3 ans d'expérience dans la conception de solutions d'IA générative et de machine
-			learning pour des clients du CAC 40.
-			<!-- Expertise reconnue en leadership d'équipe, développement de produits et
+
+			<div style="display: flex; flex-direction: row; margin-top: 8px; justify-content: space-between;">
+				<div class="left">
+					<h1>Marco Boucas</h1>
+
+					<p class="subtitle">
+						AI Engineering Manager avec plus de 3 ans d'expérience dans la conception de solutions d'IA générative
+						et de
+						machine
+						learning pour des grands comptes (Orange, La poste, EDF, ...).<br>
+						<!-- Expertise reconnue en leadership d'équipe, développement de produits et
 			déploiement de systèmes d'IA à grande échelle. -->
-			Spécialisé dans l'IA conversationnelle et les systèmes
-			agentiques.
-		</p>
+						Spécialisé dans l'IA conversationnelle et les systèmes
+						agentiques, je recherche un nouveau challenge dans la Gestion de Produit tech. 
+					</p>
+				</div>
+
+				<div>
+					<table>
+						<tr>
+							<td>📧</td>
+							<td><a href="mailto:marco.boucas@hotmail.fr">marco.boucas@hotmail.fr</a></td>
+						</tr>
+
+						<tr>
+							<td>🏠</td>
+							<td>Paris, 75006</td>
+						</tr>
+						<tr>
+							<td>📍</td>
+							<td><strong><a href="https://marco.boucas.fr" target="_blank">marco.boucas.fr</a></strong>
+							</td>
+						</tr>
+						<tr>
+							<td>🔗</td>
+							<td><a href="https://www.linkedin.com/in/boucasmarco">linkedin.com/in/boucasmarco</a></td>
+						</tr>
+						<tr>
+							<td>💻</td>
+							<td><a href="https://github.com/marcoboucas">github.com/marcoboucas</a></td>
+						</tr>
+
+					</table>
+				</div>
+
+			</div>
+
+
+		</div>
+
+		<div>
+		<img src="../assets/personal.jpeg" alt="Marco Boucas" class="profile-photo"
+			style="width: 180px; border-radius: 10px; object-fit: cover;">
+
+</div>
+
 
 	</header>
 	<section id="leftSide">
-		<div id="information">
-			<h4>Information</h4>
-			<table>
-				<tr>
-					<td>📧</td>
-					<td><a href="mailto:marco.boucas@hotmail.fr">marco.boucas@hotmail.fr</a></td>
-				</tr>
 
-				<tr>
-					<td>🏠</td>
-					<td>Paris, 75006</td>
-				</tr>
-				<tr>
-					<td>📍</td>
-					<td><strong><a href="https://marco.boucas.fr" target="_blank">marco.boucas.fr</a></strong></td>
-				</tr>
-				<tr>
-					<td>🔗</td>
-					<td><a href="https://www.linkedin.com/in/boucasmarco">linkedin.com/in/boucasmarco</a></td>
-				</tr>
-				<tr>
-					<td>💻</td>
-					<td><a href="https://github.com/marcoboucas">github.com/marcoboucas</a></td>
-				</tr>
-
-			</table>
-		</div>
 		<div id="education">
 			<h4>Education</h4>
 
-			<div>
+			<div style="margin-top: 16px;">
 				<h5>
 					{% if en %}Master of Science in Engineering at CentraleSupélec{% endif %}
 					{% if fr %}Diplôme d'Ingénieur CentraleSupélec{% endif %}
@@ -70,31 +91,36 @@
 					<span class="location">CentraleSupélec</span>
 				</p>
 
-				<p class="margin-if-no-content elementDescription">
+				<!-- <p class="margin-if-no-content elementDescription">
 					{% if en %}CentraleSupélec is an elite Engineering School, member of France's Grandes Ecoles, based
 					on a highly
 					selective recruitement process.{% endif %}
 					{% if fr %}CentraleSupélec est une école d'ingénieurs, membre des Grandes Ecoles françaises,
 					qui repose sur un processus de recrutement très sélectif.{% endif %}
 
-				</p>
+				</p> -->
 			</div>
 
-			<div>
+			<div style="margin-top: 16px;">
 				<h5>Digital Tech Year</h5>
 				<p class="no-margin">
 					<span class="date">Feb. 2020 - Jun. 2020</span>
 					|
-					<span class="location">Paris Digital Lab</span>
+					<span class="location">Paris Digital Lab / ILLUIN Technology</span>
 				</p>
 
 				<p class="margin-if-no-content elementDescription">
-					{% if en %}Gap year program specializing in new technologies: agile prototyping and project
-					development with French companies, followed by an international startup internship{% endif %}
-					{% if fr %}Programme de césure spécialisé en nouvelles technologies : prototypage agile et
-					développement de projets avec des entreprises françaises, suivi d'un stage international en
-					startup{% endif %}
-
+					Année de césure spécialisée dans les nouvelles technologies:
+				<ul>
+					<li>
+						Prototypage et développement de projets en <strong>méthode Agile</strong> pour des
+						entreprises entreprise (BNP Paribas,
+						Safran) (6 mois)
+					</li>
+					<li>
+						Stage <strong>international en IA</strong> en Startup (6 mois)
+					</li>
+				</ul>
 				</p>
 			</div>
 
@@ -137,23 +163,29 @@
 
 			<!-- Skills -->
 			<span class="tech-category">Languages</span>
-			<span class="skill">Python</span>•
-			<span class="skill">Javascript/Typescript</span>•
-			<span class="skill">HTML/CSS</span>
+			<span class="skill">Javascript / Typescript</span>•
+			<span class="skill">HTML / CSS</span>•
+			<span class="skill">Python</span>
 			<br />
 
-			<span class="tech-category">DataScience</span>
+			<span class="tech-category">Data Science</span>
 			<span class="skill">Numpy / Pandas</span>•
 			<span class="skill">Scikit-Learn / Keras</span>•
-			<span class="skill">LlamaIndex / Langchain</span>•
-			<span class="skill">Celery</span>
+			<span class="skill">LlamaIndex / Langchain</span>
 			<br />
 
-			<span class="tech-category">Web</span>
+			<span class="tech-category">Dev</span>
 			<span class="skill">NestJs / NextJs</span>•
 			<span class="skill">FastAPI</span>•
 			<span class="skill">React / Angular</span>•
-			<span class="skill">Socket.io / Websockets</span>
+			<span class="skill">Socket.io / Websockets</span>•
+			<span class="skill">TemporalIO</span>
+			<br />
+
+			<span class="tech-category">OPS</span>
+			<span class="skill">Docker</span>•
+			<span class="skill">Kubernetes</span>•
+			<span class="skill">Pulumi</span>
 			<br />
 
 			<span class="tech-category">Outils & Méthodologies</span>
@@ -161,55 +193,12 @@
 			<span class="skill">Windows</span>•
 			<span class="skill">Git</span>•
 			<span class="skill">Agile (Scrum) Methodology</span>
-		</div>
+			<br />
 
-		<div id="languages">
-			<table>
-				<tr>
-					<td><img src="../assets/flags/french.svg" class="flag" /></td>
-					<td class="language">
-						{% if en %}French{% endif %}
-						{% if fr %}Français{% endif %}
-					</td>
-					<td class="language-value">
-						{% if en %}Native{% endif %}
-						{% if fr %}Langue Maternelle{% endif %}
-					</td>
-				</tr>
-				<tr>
-					<td><img src="../assets/flags/english.svg" class="flag" /></td>
-					<td class="language">
-						{% if en %}English{% endif %}
-						{% if fr %}Anglais{% endif %}
-					</td>
-					<td class="language-value">
-						{% if en %}Fluent (IELTS: 8){% endif %}
-						{% if fr %}Expérimenté (IELTS : 8){% endif %}
-					</td>
-				</tr>
-				<!-- <tr>
-					<td><img src="../assets/flags/german.svg" class="flag" /></td>
-					<td class="language">
-						{% if en %}German{% endif %}
-						{% if fr %}Allemand{% endif %}
-					</td>
-					<td class="language-value">
-						{% if en %}Good Notions{% endif %}
-						{% if fr %}Bonnes Notions{% endif %}
-					</td>
-				</tr>
-				<tr>
-					<td><img src="../assets/flags/spanish.svg" class="flag" /></td>
-					<td class="language">
-						{% if en %}Spanish{% endif %}
-						{% if fr %}Espagnol{% endif %}
-					</td>
-					<td class="language-value">
-						{% if en %}Notions{% endif %}
-						{% if fr %}Notions{% endif %}
-					</td>
-				</tr> -->
-			</table>
+			<span class="tech-category">Langues</span>
+			<span class="skill">Français</span>•
+			<span class="skill">Anglais (IELTS: 8)</span>
+
 		</div>
 
 		<div id="hobbies">
@@ -228,16 +217,16 @@
 		</div>
 	</section>
 	<section id="rightSide">
-		<div id="highlights">
+		<!-- <div id="highlights">
 			<h4>
 				{% if en %}Key Achievements{% endif %}
 				{% if fr %}Réalisations Clés{% endif %}
 			</h4>
 
 
-			
 
-		</div>
+
+		</div> -->
 		<div id="projects">
 			<h4>
 				{% if en %}Experiences & Projects{% endif %}
@@ -250,12 +239,14 @@
 				<p class="date">
 					{% if fr %}Mai 2022 - Auj.{% endif %}
 					{% if en %}May 2022 - Now{% endif %}
-					| <span class="location">Paris</span></p>
+					| <span class="location">Paris</span>
+					|
+				<span class="location">CDI</span>
+			</p>
 				<div class="elementDescription">
 					<div class="description">
-						Scale-up française spécialisée en IA, GenAI et solutions numériques de pointe, développant des
-						solutions d'IA conversationnelle et de traitement de données pour grands comptes (La Poste,
-						Orange, EDF...).
+						ILLUIN Technology est une Scale-up française spécialisée en IA, GenAI et R&D, développant des
+						solutions d'IA conversationnelle et de traitement de données pour de grands comptes.
 
 					</div>
 					<div class="content">
@@ -377,28 +368,21 @@
 					{% if en %}Data Scientist / Developer{% endif %}
 					{% if fr %}Data Scientist / Developpeur{% endif %}<span class="location-special">| <a
 							href="https://bivwak.bnpparibas" target="_blank">BNP Paribas (BivwAk!)</a></span></h5>
-				<p class="date">Mar 2021 - Aug 2021 | <span class="location">Paris</span></p>
+				<p class="date">Mar 2021 - Aug 2021 | <span class="location">Paris</span> | <span class="location">Stage</span></p>
 				<div class="elementDescription">
-					<div class="description">
-						{% if en %}BivwAk! is BNP Paribas' transformation hub, that aims at developing new services and
-						new
-						business models, accelerating the BNP Paribas engagement strategy.{% endif %}
-						{% if fr %}BivwAk! est le centre de transformation de BNP Paribas, qui vise à développer de
+					<!-- <div class="description">
+						BivwAk! est le centre de transformation de BNP Paribas, qui vise à développer de
 						nouveaux services et de nouveaux business models, en accélérant la stratégie d'engagement de BNP
-						Paribas.{% endif %}
+						Paribas.
 
 
-					</div>
+					</div> -->
 					<div class="content">
-						{% if en %}Development of {% endif %}{% if fr %}Développement de {% endif %}<a
+						Incubation au sein de Bivwak!, l'incubateur de BNP Paribas, et développement d'un outil interne d'évaluation IA de fournisseurs de services sur des critères juridiques, de sécurité et ESG.<br>
+						Utilisation de web scraping et NLP pour identifier les documents clés et générer un rapport de conformité.<br>
+						<a
 							href="https://www.linkedin.com/posts/bivwak-by-bnpparibas_data-activity-6815909823708753921-uDIX/">TESS
-							(Tool of Ethic, Sustainability & Security)</a>.
-						{% if fr %}Utilisation de <strong>web scraping et NLP</strong> pour analyser automatiquement les
-						informations légales et sécurité de fournisseurs de services sur la base de données publiques et
-						sites webs.{% endif %}
-						{% if en %}Use of <strong>web scraping and NLP</strong> to automatically analyze the legal and
-						security
-						information from service providers based on public data.{% endif %}
+							(Tool of Ethic, Sustainability & Security)</a>
 
 						<!-- <br /> -->
 						<!-- <span class="techs">Scikit-Learn - Pandas - Selenium - Flask - React - Typescript - REST API
