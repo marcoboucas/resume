@@ -245,7 +245,6 @@ table td:first-child {
 .contact-icon {
   width: 18px;
   height: 18px;
-  stroke: var(--blue-color);
   vertical-align: middle;
   display: inline-block;
 }
