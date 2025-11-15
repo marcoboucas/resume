@@ -239,6 +239,14 @@ table td:first-child {
   text-align: center;
   font-size: 18px;
   color: var(--blue-color);
+  width: 24px;
+}
+
+.contact-icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 table tr {
